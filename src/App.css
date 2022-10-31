@@ -1,41 +1,90 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #131313;
+  padding: 1rem 3rem;
+  color: #fff;
+  border-bottom: solid 3px #ff0000;
+}
+.menu-list {
+  font-size: 1.5rem;
+  display: flex;
+}
+.menu-item {
+  padding: 1rem 3rem;
+  margin: 0 1rem;
+}
+.menu-item a {
+  color: #fff;
+}
+.home-text {
+  display: grid;
+  place-items: center;
+  margin: 200px;
+  font-size: 2rem;
   text-align: center;
 }
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
+.profile-card__container {
+  width: 70%;
+  margin: 2rem auto;
+  padding: 2rem 5rem;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(2, 1fr);
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+.profile-card {
+  display: flex;
+  gap: 2rem;
+  padding: 2rem;
+  background-color: #e9e8e8;
+  box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.164);
 }
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.navigate-btns {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 50%;
+  margin: 8rem auto;
 }
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn {
+  display: inline-block;
+  padding: 1.5rem 5rem;
+  background-color: #131313;
+  color: #fff;
+  font-size: 2rem;
+  border-radius: 10px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.btn:disabled {
+  cursor: not-allowed;
+  background-color: #adadad;
 }
-
-.card {
-  padding: 2em;
+.user-details__container {
+  width: fit-content;
+  margin: 100px auto;
+  padding: 5rem;
+  text-align: center;
+  background-color: #cfcdcd;
 }
-
-.read-the-docs {
-  color: #888;
+.details-text {
+  font-size: 2rem;
+}
+.back {
+  display: inline-block;
+  padding: 2rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border-radius: 20px;
+  margin: 3rem;
+  background-color: #ffb320;
+}
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #131313;
+  padding: 1rem 3rem;
+  color: #fff;
+  border-top: solid 3px #ff0000;
+  font-size: 2rem;
 }
